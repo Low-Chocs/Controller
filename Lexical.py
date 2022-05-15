@@ -1,5 +1,5 @@
-list_of_words = ['Hola', 'pana', 'Juan', 'Guillermo']
-variable = 'Hola pana Juan Guillermo Antonio\n'
+list_of_words = ['Hola', 'pana', 'Juan', 'Guillermo', ';']
+variable = 'Hola pana Juan Guillermo Antonio\n;'
 list_of_tokens = []
 error_list = []
 
@@ -21,6 +21,8 @@ def controller(list: list, string: str, row: int, column: int):
 row = 1 
 column = 1
 new_word = ''
+variable += ' '
+
 for string in variable:
 
     if string == '\n':
